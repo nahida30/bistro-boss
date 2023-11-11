@@ -8,11 +8,19 @@ import slide2 from '/public/assets/home/slide2.jpg'
 import slide3 from '/public/assets/home/slide3.jpg'
 import slide4 from '/public/assets/home/slide4.jpg'
 import slide5 from '/public/assets/home/slide5.jpg'
+import SectionTitle from '../Shared/SectionTitle/SectionTitle';
 
 
 const Category = () => {
     return (
-        <Swiper
+        <section>
+            <SectionTitle
+            subHeading={"From 11.00am to 10.00pm"}
+            heading={"Order Online"}
+            >
+                
+            </SectionTitle>
+            <Swiper
         slidesPerView={4}
         
         freeMode={true}
@@ -44,6 +52,7 @@ const Category = () => {
         </SwiperSlide>
        
       </Swiper>
+        </section>
     );
 };
 
